@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT HERE: Browser tab title + the short text Google and link previews show.
+     Only change the words between <title> and </title>, and the words inside the quotation marks after content="". -->
+  <title>Kashaf Gafoor — Cybersecurity &amp; Agentic AI</title>
+  <meta name="description" content="Kashaf Gafoor — Ethical Hacking Intern and co-developer of ThreatIQ, working across penetration testing, vulnerability assessment, network defense and Agentic AI.">
+  <meta name="theme-color" content="#0C140C">
+  <meta property="og:title" content="Kashaf Gafoor — Cybersecurity & Agentic AI">
+  <meta property="og:description" content="Elegance in Design. Intelligence in Defense.">
+  <meta property="og:type" content="website">
+  <!-- END: browser tab title -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Fonts (local fallbacks are defined in style.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Loaded in <head> on purpose: it applies the saved theme before first paint,
+       then waits for DOMContentLoaded for everything else. -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient background: slow royal-blue / lavender glows + faint grid -->
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__glow ambient__glow--blue"></span>
+    <span class="ambient__glow ambient__glow--lav"></span>
+    <span class="ambient__grid"></span>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============================ NAVIGATION ============================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <!-- EDIT HERE: Your name in the top menu bar. Change only "Kashaf Gafoor" in the next 3 lines.
+           The "K" and "G" are your initials (K<i>G</i>): change the letters only, keep <i> and </i>. -->
+      <a class="nav__brand" href="#home" aria-label="Kashaf Gafoor — back to top">
+        <span class="nav__mark" aria-hidden="true">K<i>G</i></span>
+        <span class="nav__name">Kashaf Gafoor</span>
+      </a>
+
+      <nav class="nav__menu" id="nav-menu" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#expertise">Expertise</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#certifications">Certifications</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <p class="nav__menu-foot mono" aria-hidden="true">Cybersecurity × Agentic AI</p>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 14.6A8.5 8.5 0 0 1 9.4 3.8a8.5 8.5 0 1 0 10.8 10.8Z"/></svg>
+        </button>
+        <button class="nav__burger" id="nav-burger" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__inner container">
+
+        <div class="hero__copy">
+          <!-- START: Your professional title (small line above your name). Change only the words "Cybersecurity" and "Agentic AI". -->
+          <p class="eyebrow hero__anim" style="--d:0">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            Cybersecurity <span class="x" aria-hidden="true">×</span><span class="sr-only">and</span> Agentic AI
+          </p>
+
+          <!-- START: Your name (big heading). First name is on the first line, last name on the second.
+               Change only the word between > and </span>. -->
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line"><span class="hero__word" style="--d:1">Kashaf</span></span>
+            <span class="hero__line"><span class="hero__word hero__word--italic" style="--d:2">Gafoor</span></span>
+          </h1>
+
+          <!-- START: Your tagline. It also appears in the footer (search: footer__tag). -->
+          <p class="hero__tagline hero__anim" style="--d:3">
+            Elegance in Design.<br> <em>Intelligence in Defense.</em>
+          </p>
+
+          <!-- START: Your short introduction. Replace the sentences below. Words between <strong> and </strong> appear bold. -->
+          <p class="hero__intro hero__anim" style="--d:4">
+            Ethical hacking intern working across penetration testing, vulnerability
+            assessment and network defense, and co-developer of
+            <strong>ThreatIQ</strong>, an Agentic&nbsp;AI platform for cyber incident investigation.
+          </p>
+
+          <div class="hero__ctas hero__anim" style="--d:5">
+            <a class="btn btn--primary" href="#projects">
+              View My Work
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <!-- START: Your social media links (top of page).
+               The link address is inside href="...". The visible word is between <span> and </span>.
+               To add GitHub: see WEBSITE-EDITING-GUIDE.md, Section H. -->
+          <ul class="hero__social hero__anim" style="--d:6" aria-label="Profiles">
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/in/kashaf-noor-lab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11Z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="mailto:kashafgafoor@gmail.com" aria-label="Email kashafgafoor@gmail.com">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+                <span>Email</span>
+              </a>
+            </li>
+            <!-- GitHub: not listed on the LinkedIn profile. Add when available:
+            <li><a class="social-link" href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            -->
+          </ul>
+          <!-- END: social media links -->
+        </div>
+
+        <!-- Portrait -->
+        <div class="hero__visual hero__anim" style="--d:3">
+          <figure class="portrait" id="portrait">
+            <div class="portrait__frame">
+              <!-- START: PROFILE PICTURE. Save your photo as  assets/images/portrait.jpg  (exact name, small letters).
+                   The website picks it up automatically. If you use another name, change only the name inside src="..."
+                   and your name inside alt="...". Do not change anything else in this block. -->
+              <!-- Replace assets/images/portrait.jpg with a genuine photo (portrait, ~4:5). -->
+              <img class="portrait__img" src="assets/images/portrait.jpg" alt="Portrait of Kashaf Gafoor" width="640" height="800" decoding="async" fetchpriority="high">
+              <!-- END: profile picture -->
+              <div class="portrait__placeholder" aria-hidden="true">
+                <svg class="portrait__rings" viewBox="0 0 400 500">
+                  <circle cx="200" cy="230" r="70"/>
+                  <circle cx="200" cy="230" r="120"/>
+                  <circle cx="200" cy="230" r="170"/>
+                  <path d="M40 500 C 60 380, 140 330, 200 330 C 260 330, 340 380, 360 500"/>
+                </svg>
+                <span class="portrait__monogram">K<i>G</i></span>
+                <span class="portrait__hint mono">Portrait placeholder</span>
+              </div>
+            </div>
+            <span class="portrait__outline" aria-hidden="true"></span>
+          </figure>
+
+          <!-- EDIT HERE: The 4 small floating labels around your photo. Change only the words after </span>. Keep it at 4. -->
+          <ul class="float-tags" aria-label="Focus areas">
+            <li class="float-tag float-tag--a"><span class="dot"></span>Penetration Testing</li>
+            <li class="float-tag float-tag--b float-tag--ai"><span class="dot"></span>RAG · Agentic AI</li>
+            <li class="float-tag float-tag--c"><span class="dot"></span>Vulnerability Assessment</li>
+            <li class="float-tag float-tag--d"><span class="dot"></span>Wireshark · Linux</li>
+          </ul>
+
+          <svg class="hero__nodes" viewBox="0 0 200 200" aria-hidden="true">
+            <path d="M20 160 L70 120 L120 140 L170 60 M70 120 L90 50 L170 60"/>
+            <circle cx="20" cy="160" r="3"/><circle cx="70" cy="120" r="3.5"/>
+            <circle cx="120" cy="140" r="3"/><circle cx="170" cy="60" r="4"/>
+            <circle cx="90" cy="50" r="3"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- EDIT HERE: Your current role and your city, shown below the introduction. Change only the words after </span> and the city. -->
+      <div class="hero__status container hero__anim" style="--d:7">
+        <p class="status mono"><span class="status__dot" aria-hidden="true"></span> Currently: Ethical Hacking Intern at Nexus Defenders</p>
+        <p class="status mono status--muted">Faisalabad, Punjab, Pakistan</p>
+        <a class="scroll-cue mono" href="#about">Scroll <span aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <!-- Discipline strip -->
+    <!-- EDIT HERE: The row of keywords under the hero. Change only the words between <span> and </span>. -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip__inner container">
+        <span>Ethical Hacking</span><i>◆</i>
+        <span>Penetration Testing</span><i>◆</i>
+        <span>Network Defense</span><i>◆</i>
+        <span class="ai">Agentic AI</span><i>◆</i>
+        <span class="ai">RAG</span><i>◆</i>
+        <span class="ai">Automations</span>
+      </div>
+    </div>
+
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <header class="section-head about__head reveal">
+          <p class="section-index mono"><span>01</span> About</p>
+          <!-- EDIT HERE: The About heading. Words between <em> and </em> appear in italic. -->
+          <h2 class="section-title" id="about-title">A defender <em>who builds.</em></h2>
+        </header>
+
+        <!-- START: About Me text. Replace the sentences inside each <p ...> ... </p>.
+             Words between <span class="hl"> and </span> are highlighted. -->
+        <div class="about__body">
+          <p class="lead reveal">
+            I'm a cybersecurity student working in two areas. One is the offensive side of
+            security: <span class="hl">ethical hacking, penetration testing and vulnerability assessment</span>.
+            The other is building intelligent systems with <span class="hl hl--ai">Agentic AI and RAG</span>.
+          </p>
+          <p class="reveal">
+            I'm currently an Ethical Hacking Intern at Nexus Defenders. I build practical skills
+            hands-on with TryHackMe, Linux and Wireshark. Alongside security, I co-developed ThreatIQ,
+            which brings AI-driven workflows to cyber incident investigation. My interests cover
+            network defense, security testing, cyber security risk and incident response.
+          </p>
+
+          <blockquote class="pullquote reveal">
+            <p>“A dedicated, fast learner committed to securing digital assets.”</p>
+          </blockquote>
+
+          <!-- EDIT HERE: Quick facts (Based in / Currently / Building / Education).
+               Change the label between <dt> and </dt>, and the answer between <dd> and </dd>. -->
+          <dl class="facts reveal">
+            <div><dt>Based in</dt><dd>Faisalabad, Pakistan</dd></div>
+            <div><dt>Currently</dt><dd>Ethical Hacking Intern · Nexus Defenders</dd></div>
+            <div><dt>Building</dt><dd>Agentic AI · RAG · Automations</dd></div>
+            <div><dt>Education</dt><dd>FSc · KIPS Education System</dd></div>
+          </dl>
+        </div>
+        <!-- END: About Me text -->
+      </div>
+
+      <!-- Real figures taken from the LinkedIn profile -->
+      <div class="container">
+        <!-- START: The 4 numbers (highlights). IMPORTANT: each number is written TWICE on its line,
+             e.g. data-count="20">20< . Change BOTH to the same new number, or the old number will show.
+             Change the description between <span class="metric__label"> and </span>. -->
+        <ul class="metrics reveal-group" aria-label="Learning highlights">
+          <li class="metric reveal">
+            <span class="metric__value"><span class="metric__prefix">Top </span><span data-count="20">20</span>%</span>
+            <span class="metric__label">TryHackMe “Complete Beginner” path</span>
+          </li>
+          <li class="metric reveal">
+            <span class="metric__value"><span data-count="50">50</span>+</span>
+            <span class="metric__label">Hours of hands-on TryHackMe learning</span>
+          </li>
+          <li class="metric reveal">
+            <span class="metric__value"><span data-count="90">90</span>%+</span>
+            <span class="metric__label">Quiz scores across 4 DigiSkills cybersecurity modules</span>
+          </li>
+          <li class="metric reveal">
+            <span class="metric__value"><span data-count="15">15</span>+</span>
+            <span class="metric__label">Classmates supported with Windows &amp; network fixes</span>
+          </li>
+        </ul>
+        <!-- END: highlight numbers -->
+      </div>
+    </section>
+
+    <!-- ============================ EXPERTISE ============================ -->
+    <section class="section expertise" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="section-index mono"><span>02</span> Expertise</p>
+          <h2 class="section-title" id="expertise-title">Two disciplines, <em>one identity.</em></h2>
+          <p class="section-sub">Security work tells me what needs protecting. Agentic AI is how I build systems that help with it.</p>
+        </header>
+
+        <div class="domains">
+          <!-- 01 — Cybersecurity -->
+          <article class="domain domain--cyber reveal" aria-labelledby="dom-cyber">
+            <div class="domain__visual" aria-hidden="true">
+              <svg class="radar" viewBox="0 0 200 200">
+                <defs>
+                  <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="currentColor" stop-opacity="0"/>
+                    <stop offset="1" stop-color="currentColor" stop-opacity=".35"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="60"/><circle cx="100" cy="100" r="90"/>
+                <path d="M100 10v180M10 100h180"/>
+                <path class="radar__sweep" d="M100 100 L190 100 A90 90 0 0 0 163.6 36.4 Z" fill="url(#sweep)"/>
+                <circle class="radar__blip" cx="140" cy="70" r="3"/>
+                <circle class="radar__blip radar__blip--2" cx="62" cy="128" r="2.5"/>
+              </svg>
+            </div>
+            <p class="domain__index mono">01 — Cybersecurity</p>
+            <h3 class="domain__title" id="dom-cyber">Offensive security, <em>done carefully.</em></h3>
+            <p class="domain__text">Finding weaknesses before attackers do: assessing systems, analysing risk and helping close the gaps.</p>
+
+            <!-- START: Your CYBERSECURITY skills. One skill per line: <li>Skill name</li>
+                 To add a skill: copy one whole line and change the words. To remove: delete the whole line. -->
+            <ul class="capabilities">
+              <li>Ethical Hacking</li>
+              <li>Penetration Testing</li>
+              <li>Vulnerability Assessment</li>
+              <li>Network Defense</li>
+              <li>Security Testing</li>
+              <li>Cyber Security Risk</li>
+              <li>Incident Response</li>
+            </ul>
+            <!-- END: cybersecurity skills -->
+
+            <!-- EDIT HERE: Cybersecurity tools ("Toolkit"). One tool per line: <li class="chip">Tool</li>. Copy a line to add, delete a line to remove. -->
+            <div class="toolbar">
+              <span class="toolbar__label mono">Toolkit</span>
+              <ul class="chips">
+                <li class="chip">Linux</li>
+                <li class="chip">Wireshark</li>
+                <li class="chip">TryHackMe</li>
+                <li class="chip">Networking: ipconfig · ping · tracert</li>
+              </ul>
+            </div>
+          </article>
+
+          <div class="domains__join" aria-hidden="true"><span>×</span></div>
+
+          <!-- 02 — Agentic AI -->
+          <article class="domain domain--ai reveal" aria-labelledby="dom-ai">
+            <div class="domain__visual" aria-hidden="true">
+              <svg class="graph" viewBox="0 0 200 200">
+                <path class="graph__edge" d="M30 60 L100 40 L170 70 M30 60 L80 120 L100 40 M80 120 L150 140 L170 70 M150 140 L100 175 L80 120"/>
+                <circle class="graph__node" cx="30" cy="60" r="5"/>
+                <circle class="graph__node graph__node--core" cx="100" cy="40" r="7"/>
+                <circle class="graph__node" cx="170" cy="70" r="5"/>
+                <circle class="graph__node graph__node--core" cx="80" cy="120" r="7"/>
+                <circle class="graph__node" cx="150" cy="140" r="5"/>
+                <circle class="graph__node" cx="100" cy="175" r="4"/>
+              </svg>
+            </div>
+            <p class="domain__index mono">02 — Agentic AI</p>
+            <h3 class="domain__title" id="dom-ai">Intelligent systems, <em>with intent.</em></h3>
+            <p class="domain__text">Designing autonomous, retrieval-grounded workflows that turn scattered evidence into clear, actionable guidance.</p>
+
+            <!-- START: Your AGENTIC AI skills (RAG, automations...). One skill per line: <li>Skill name</li>
+                 To add a skill: copy one whole line and change the words. To remove: delete the whole line. -->
+            <ul class="capabilities">
+              <li>Agentic AI Development</li>
+              <li>Retrieval-Augmented Generation (RAG)</li>
+              <li>AI Automations</li>
+              <li>Autonomous Workflows</li>
+              <li>Product Requirements (PRD)</li>
+            </ul>
+            <!-- END: Agentic AI skills -->
+
+            <!-- EDIT HERE: The 4 numbered workflow steps. Change only the word after </span>. -->
+            <!-- Workflow mirrors ThreatIQ: correlate evidence → assess severity → generate guidance -->
+            <ol class="flow" aria-label="ThreatIQ workflow">
+              <li><span class="mono">01</span>Evidence</li>
+              <li><span class="mono">02</span>Retrieve</li>
+              <li><span class="mono">03</span>Assess</li>
+              <li><span class="mono">04</span>Respond</li>
+            </ol>
+
+            <!-- EDIT HERE: AI tools ("Stack"). One tool per line: <li class="chip ...">Tool</li>. Copy a line to add, delete a line to remove. -->
+            <div class="toolbar">
+              <span class="toolbar__label mono">Stack</span>
+              <ul class="chips">
+                <li class="chip chip--ai">Python</li>
+                <li class="chip chip--ai">Streamlit</li>
+                <li class="chip chip--ai">Groq API</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container experience__grid">
+        <header class="section-head experience__head reveal">
+          <p class="section-index mono"><span>03</span> Experience</p>
+          <h2 class="section-title" id="experience-title">The path <em>so far.</em></h2>
+          <p class="section-sub">Internships, a hackathon build, and the self-directed practice behind both.</p>
+        </header>
+
+        <!-- START: WORK EXPERIENCE & INTERNSHIPS (newest at the top).
+             Each job sits between "JOB START" and "JOB END".
+             To ADD a job: copy everything from a JOB START line to its JOB END line (including both),
+             paste it where you want it in the list, then change the text. To REMOVE a job: delete from JOB START to JOB END.
+             Do not delete the line with "timeline__progress" just below. -->
+        <ol class="timeline" id="timeline">
+          <li class="timeline__progress" aria-hidden="true"></li>
+
+          <!-- JOB START: ThreatIQ (Co-Developer) -->
+          <li class="tl-item reveal">
+            <span class="tl-item__dot tl-item__dot--ai" aria-hidden="true"></span>
+            <article class="tl-card">
+              <p class="tl-card__meta mono"><time datetime="2026-09">Sep 2026</time> – <time datetime="2026-11">Nov 2026</time> · 3 mos · Faisalabad</p>
+              <h3 class="tl-card__role">Co-Developer &amp; PRD Writer</h3>
+              <p class="tl-card__org">ThreatIQ <span>· Hackathon Project</span></p>
+              <p class="tl-card__desc">
+                Co-developed ThreatIQ, an AI-driven cyber incident investigation platform that correlates
+                security evidence, assesses threat severity and generates response guidance. Built its autonomous
+                workflows with Agentic AI and RAG, and wrote the Product Requirements Document and the
+                repository architecture.
+              </p>
+              <ul class="chips">
+                <li class="chip chip--ai">Agentic AI</li><li class="chip chip--ai">RAG</li>
+                <li class="chip">Python</li><li class="chip">Streamlit</li><li class="chip">Groq API</li><li class="chip">PRD</li>
+              </ul>
+            </article>
+          </li>
+          <!-- JOB END: ThreatIQ -->
+
+          <!-- JOB START: Nexus Defenders (Ethical Hacking Intern) -->
+          <li class="tl-item reveal">
+            <span class="tl-item__dot" aria-hidden="true"></span>
+            <article class="tl-card">
+              <p class="tl-card__meta mono"><time datetime="2026-07">Jul 2026</time> – <time datetime="2026-11">Nov 2026</time> · 5 mos · Remote</p>
+              <h3 class="tl-card__role">Ethical Hacking Intern</h3>
+              <p class="tl-card__org">Nexus Defenders</p>
+              <p class="tl-card__desc">
+                Ethical hacking internship centred on network security, vulnerability assessment and
+                penetration testing. The focus is on identifying system flaws, analysing security
+                risks and gaining hands-on threat-mitigation experience.
+              </p>
+              <ul class="chips">
+                <li class="chip">Network Security</li><li class="chip">Vulnerability Assessment</li>
+                <li class="chip">Penetration Testing</li><li class="chip">Threat Mitigation</li>
+              </ul>
+            </article>
+          </li>
+          <!-- JOB END: Nexus Defenders -->
+
+          <!-- JOB START: Self Learning (IT Support Intern) -->
+          <li class="tl-item reveal">
+            <span class="tl-item__dot" aria-hidden="true"></span>
+            <article class="tl-card">
+              <p class="tl-card__meta mono"><time datetime="2026-02">Feb 2026</time> – Present · Faisalabad</p>
+              <h3 class="tl-card__role">IT Support Intern</h3>
+              <p class="tl-card__org">Self Learning <span>· Self Project</span></p>
+              <ul class="tl-card__list">
+                <li>Fixed Wi-Fi, printer and MS Office issues for 15+ classmates in the TUF lab.</li>
+                <li>Practised IP configuration, ping and tracert from the Command Prompt.</li>
+                <li>Ranked in the top 20% of TryHackMe's “Complete Beginner” path, with 50+ learning hours.</li>
+                <li>Completed 4 DigiSkills cybersecurity modules, scoring 90%+ on the quizzes.</li>
+              </ul>
+              <ul class="chips">
+                <li class="chip">Windows OS</li><li class="chip">MS Office</li>
+                <li class="chip">Basic Networking</li><li class="chip">Linux Commands</li>
+              </ul>
+            </article>
+          </li>
+          <!-- JOB END: Self Learning -->
+        </ol>
+        <!-- END: work experience -->
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head section-head--split reveal">
+          <div>
+            <p class="section-index mono"><span>04</span> Projects</p>
+            <h2 class="section-title" id="projects-title">Selected <em>work.</em></h2>
+          </div>
+          <p class="section-sub">Builds and labs from my LinkedIn profile, from AI-driven incident investigation to hands-on network practice.</p>
+        </header>
+
+        <!-- Featured -->
+        <!-- START: FEATURED PROJECT (the large ThreatIQ card). Edit the title, description, details and tags.
+             Leave the "Illustrative visual" part (the next ~20 lines) as it is. -->
+        <article class="feature reveal" aria-labelledby="proj-threatiq">
+          <div class="feature__visual" aria-hidden="true">
+            <!-- Illustrative interface (not a product screenshot) -->
+            <div class="mock">
+              <div class="mock__bar"><i></i><i></i><i></i><span class="mono">threatiq / investigation</span></div>
+              <div class="mock__body">
+                <div class="mock__col">
+                  <p class="mock__label mono">Evidence</p>
+                  <span class="mock__row"></span><span class="mock__row mock__row--s"></span>
+                  <span class="mock__row"></span><span class="mock__row mock__row--m"></span>
+                </div>
+                <div class="mock__col">
+                  <p class="mock__label mono">Severity</p>
+                  <div class="mock__bars"><b style="--h:38%"></b><b style="--h:62%"></b><b style="--h:88%"></b><b style="--h:50%"></b></div>
+                  <p class="mock__label mono">Guidance</p>
+                  <span class="mock__row mock__row--ai"></span><span class="mock__row mock__row--ai mock__row--s"></span>
+                </div>
+              </div>
+            </div>
+            <p class="feature__caption mono">Illustrative visual</p>
+          </div>
+
+          <div class="feature__body">
+            <p class="feature__cat mono">Featured · Agentic AI × Incident Response · Hackathon</p>
+            <h3 class="feature__title" id="proj-threatiq">ThreatIQ</h3>
+            <p class="feature__desc">
+              An AI-driven cyber incident investigation platform. ThreatIQ correlates security evidence,
+              assesses how severe a threat is, and generates response guidance through autonomous Agentic
+              AI and RAG workflows.
+            </p>
+            <dl class="feature__meta">
+              <div><dt>Role</dt><dd>Co-Developer &amp; PRD Writer</dd></div>
+              <div><dt>Timeline</dt><dd>Sep – Nov 2026</dd></div>
+              <div><dt>Owned</dt><dd>Product Requirements Document, repository architecture</dd></div>
+            </dl>
+            <ul class="chips">
+              <li class="chip chip--ai">Agentic AI</li><li class="chip chip--ai">RAG</li>
+              <li class="chip">Python</li><li class="chip">Streamlit</li><li class="chip">Groq API</li>
+            </ul>
+            <!-- No public repo/live link on the profile yet. Replace with the real URL when available. -->
+            <a class="text-link" href="mailto:kashafgafoor@gmail.com?subject=ThreatIQ%20%E2%80%94%20walkthrough%20request">
+              Request a walkthrough
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </a>
+          </div>
+        </article>
+        <!-- END: featured project -->
+
+        <!-- Secondary projects -->
+        <!-- START: OTHER PROJECTS (the smaller cards).
+             Each project sits between "PROJECT START" and "PROJECT END".
+             To ADD a project: copy the ready-made template at the bottom of this list (see WEBSITE-EDITING-GUIDE.md, Section E).
+             To REMOVE a project: delete everything from its PROJECT START to its PROJECT END. -->
+        <div class="project-grid">
+          <!-- PROJECT START: Network Basics Lab -->
+          <article class="project reveal" aria-labelledby="proj-network">
+            <div class="project__visual project__visual--net" aria-hidden="true">
+              <pre class="mono">C:\&gt; ipconfig
+C:\&gt; ping 8.8.8.8
+C:\&gt; tracert example.com<span class="caret"></span></pre>
+            </div>
+            <p class="project__cat mono">Networking · Lab</p>
+            <h3 class="project__title" id="proj-network">Network Basics Lab</h3>
+            <p class="project__desc">A hands-on lab on how traffic moves: IP configuration and network diagnostics with <code>ping</code> and <code>tracert</code> from the Command Prompt.</p>
+            <ul class="chips"><li class="chip">Basic Networking</li><li class="chip">Command Prompt</li><li class="chip">Windows OS</li></ul>
+          </article>
+          <!-- PROJECT END: Network Basics Lab -->
+
+          <!-- PROJECT START: Windows Troubleshooting -->
+          <article class="project reveal" aria-labelledby="proj-support">
+            <div class="project__visual project__visual--support" aria-hidden="true">
+              <ul class="ticket mono">
+                <li><span>Wi-Fi</span><b>resolved</b></li>
+                <li><span>Printer</span><b>resolved</b></li>
+                <li><span>MS Office</span><b>resolved</b></li>
+              </ul>
+            </div>
+            <p class="project__cat mono">IT Support · Field Work</p>
+            <h3 class="project__title" id="proj-support">Windows Troubleshooting</h3>
+            <p class="project__desc">Diagnosed and fixed Wi-Fi, printer and MS Office issues for 15+ classmates in the TUF computer lab.</p>
+            <ul class="chips"><li class="chip">Windows OS</li><li class="chip">MS Office</li><li class="chip">Troubleshooting</li></ul>
+          </article>
+          <!-- PROJECT END: Windows Troubleshooting -->
+
+          <!-- TEMPLATE — duplicate to add a project:
+          <article class="project reveal" aria-labelledby="proj-ID">
+            <div class="project__visual" aria-hidden="true"></div>
+            <p class="project__cat mono">Category</p>
+            <h3 class="project__title" id="proj-ID">Project title</h3>
+            <p class="project__desc">Short description.</p>
+            <ul class="chips"><li class="chip">Tech</li></ul>
+            <a class="text-link" href="https://github.com/..." target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </article>
+          -->
+          <!-- END: other projects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EDUCATION ============================ -->
+    <section class="section education" id="education" aria-labelledby="education-title">
+      <div class="container education__grid">
+        <header class="section-head reveal">
+          <p class="section-index mono"><span>05</span> Education</p>
+          <h2 class="section-title" id="education-title">Foundations.</h2>
+        </header>
+
+        <!-- START: EDUCATION. Each school is one block from <li class="edu reveal"> to the next </li>.
+             Copy a whole block to add a school, delete a whole block to remove one.
+             Dates: change the visible month/year (e.g. Feb 2026). The datetime="2026-02" part is year-month for search engines; update it too. -->
+        <ol class="edu-list">
+          <li class="edu reveal">
+            <p class="edu__years mono"><time datetime="2026-02">Feb 2026</time> – <time datetime="2026-05">May 2026</time></p>
+            <div>
+              <h3 class="edu__school">NAVTTC</h3>
+              <p class="edu__degree">Video Editing &amp; Graphic Designing</p>
+            </div>
+          </li>
+          <li class="edu reveal">
+            <p class="edu__years mono"><time datetime="2023-06">Jun 2023</time> – <time datetime="2025-08">Aug 2025</time></p>
+            <div>
+              <h3 class="edu__school">KIPS Education System</h3>
+              <p class="edu__degree">Intermediate, FSc</p>
+            </div>
+          </li>
+        </ol>
+        <!-- END: education -->
+      </div>
+    </section>
+
+    <!-- ============================ CERTIFICATIONS ============================ -->
+    <section class="section certs" id="certifications" aria-labelledby="certs-title">
+      <div class="container certs__grid">
+        <header class="section-head reveal">
+          <p class="section-index mono"><span>06</span> Certifications</p>
+          <h2 class="section-title" id="certs-title">Certifications <em>&amp; training.</em></h2>
+          <p class="section-sub">Structured learning completed so far. Formal credentials will be added here as they're earned.</p>
+        </header>
+
+        <!-- START: CERTIFICATIONS. Each one sits between "CERTIFICATE START" and "CERTIFICATE END".
+             To ADD one: copy a whole CERTIFICATE block (or use the template at the bottom) and change the text.
+             To REMOVE one: delete from its CERTIFICATE START to its CERTIFICATE END. -->
+        <div class="cert-list">
+          <!-- CERTIFICATE START: TryHackMe -->
+          <article class="cert reveal">
+            <div class="cert__seal" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 4 40 10v12c0 10-7 18-16 22C15 40 8 32 8 22V10Z"/><path d="m17 24 5 5 9-10"/></svg>
+            </div>
+            <div class="cert__body">
+              <p class="cert__issuer mono">TryHackMe</p>
+              <h3 class="cert__name">Complete Beginner Path</h3>
+              <p class="cert__detail">Ranked in the top 20%, with 50+ hours of hands-on learning.</p>
+            </div>
+            <span class="cert__tag mono">Learning path</span>
+          </article>
+          <!-- CERTIFICATE END: TryHackMe -->
+
+          <!-- CERTIFICATE START: DigiSkills -->
+          <article class="cert reveal">
+            <div class="cert__seal" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="24" rx="2"/><path d="M16 40h16M24 34v6M15 18h18M15 24h11"/></svg>
+            </div>
+            <div class="cert__body">
+              <p class="cert__issuer mono">DigiSkills</p>
+              <h3 class="cert__name">Cybersecurity</h3>
+              <p class="cert__detail">Completed 4 modules, scoring 90%+ on the quizzes.</p>
+            </div>
+            <span class="cert__tag mono">Training</span>
+          </article>
+          <!-- CERTIFICATE END: DigiSkills -->
+
+          <!-- TEMPLATE — add a formal certification:
+          <article class="cert reveal">
+            <div class="cert__seal" aria-hidden="true">…</div>
+            <div class="cert__body">
+              <p class="cert__issuer mono">Issuer · Month YYYY</p>
+              <h3 class="cert__name">Certification name</h3>
+              <a class="text-link" href="CREDENTIAL_URL" target="_blank" rel="noopener noreferrer">Verify credential</a>
+            </div>
+            <span class="cert__tag mono">Certificate</span>
+          </article>
+          -->
+          <!-- END: certifications -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__card reveal">
+          <p class="section-index mono"><span>07</span> Contact</p>
+          <!-- START: CONTACT SECTION. Heading and short message below. Words between <em> and </em> appear in italic. -->
+          <h2 class="contact__title" id="contact-title">
+            Let's secure what's next <em>and make it intelligent.</em>
+          </h2>
+          <p class="contact__text">
+            I'm open to opportunities in ethical hacking, security testing and Agentic&nbsp;AI.
+            The fastest way to reach me is email.
+          </p>
+
+          <!-- EDIT HERE: Your email address. It is written 3 times in the next 2 lines
+               (after mailto:, between > and </a>, and after data-copy=). Change all 3. -->
+          <div class="contact__email">
+            <a class="contact__address" href="mailto:kashafgafoor@gmail.com">kashafgafoor@gmail.com</a>
+            <button class="copy-btn mono" id="copy-email" type="button" data-copy="kashafgafoor@gmail.com" aria-live="polite">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+              <span class="copy-btn__label">Copy</span>
+            </button>
+          </div>
+
+          <!-- EDIT HERE: Contact buttons. "Start a conversation" opens an email (change the address after mailto:).
+               "Connect on LinkedIn" opens the address inside href="...". -->
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:kashafgafoor@gmail.com?subject=Hello%20Kashaf">
+              Start a conversation
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/kashaf-noor-lab" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11Z"/></svg>
+              Connect on LinkedIn<span class="sr-only"> (opens in a new tab)</span>
+            </a>
+          </div>
+
+          <!-- EDIT HERE: Your location. -->
+          <p class="contact__loc mono">Faisalabad, Punjab, Pakistan</p>
+        </div>
+      </div>
+    </section>
+    <!-- END: contact section -->
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <!-- EDIT HERE: Your initials and name in the footer, and your tagline on the line after. -->
+        <a class="nav__brand" href="#home"><span class="nav__mark" aria-hidden="true">K<i>G</i></span><span class="nav__name">Kashaf Gafoor</span></a>
+        <p class="footer__tag">Elegance in Design. Intelligence in Defense.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a>
+        <a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+      </nav>
+
+      <!-- EDIT HERE: Footer icons. The first opens LinkedIn, the second opens email. Change only the addresses inside href="...". -->
+      <div class="footer__social">
+        <a class="icon-btn" href="https://www.linkedin.com/in/kashaf-noor-lab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+          <svg class="icon icon--fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.83v1.5h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4v-11Z"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:kashafgafoor@gmail.com" aria-label="Email">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+        </a>
+        <a class="icon-btn" href="#home" aria-label="Back to top">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+        </a>
+      </div>
+
+      <!-- EDIT HERE: Copyright line. Change only your name. The year updates by itself. -->
+      <p class="footer__copy mono">© <span id="year">2026</span> Kashaf Gafoor. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
